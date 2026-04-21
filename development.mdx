@@ -1,22 +1,50 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Development"
+description: "Preview changes locally to update your docs"
 ---
 
+import SnippetIntro from '/snippets/snippet-intro.mdx';
+
 <Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
+  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. \
+  Please upgrade to `docs.json` before proceeding and delete the legacy `mint.json` file.
 </Info>
 
-Follow these steps to install and run Mintlify on your operating system:
+Follow these steps to install and run Mintlify on your <Tooltip tip="Add tooltip text" headline="saas" cta="sanoke text">operating</Tooltip> system:
+
+<Badge shape="pill">Label/</Badge>
+
+# Hey
+
+## Hey
+
+## hey
+
+#### Hey
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+|  |  |  |  |
+|  |  |  |  |
 
 **Step 1**: Install Mintlify:
 
+<Update label="04/16/2026">
+  ## This is aother one
+
+  this is an xample
+</Update>
+
+<Update label="04/16/2026">
+</Update>
+
+/code
+
 <CodeGroup>
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+```bash npm
+npm i -g mintlify
+```
 
 ```bash yarn
 yarn global add mintlify
@@ -73,14 +101,16 @@ mintlify broken-links
 ## Deployment
 
 <Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
+  Unlimited editors available under the [Pro Plan](https://mintlify.com/pricing) and above.
 </Tip>
 
 If the deployment is successful, you should see the following:
 
 <Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
+  <img
+    src="/images/checks-passed.png"
+    style={{ borderRadius: '0.5rem' }}
+  />
 </Frame>
 
 ## Code Formatting
@@ -91,17 +121,20 @@ We suggest using extensions on your IDE to recognize and format MDX. If you're a
 
 <AccordionGroup>
   <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
     This may be due to an outdated version of node. Try the following:
+
     1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
     2. Upgrade to Node v19 or higher.
     3. Reinstall mintlify: `npm install -g mintlify`
   </Accordion>
 
   <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
+    Solution: Go to the root of your device and delete the ~/.mintlify folder. Afterwards, run `mintlify dev` again.
   </Accordion>
 </AccordionGroup>
 
 Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+
+### This is h3
+
+#### This is cool
