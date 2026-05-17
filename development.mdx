@@ -12,7 +12,31 @@ import SnippetIntro from '/snippets/snippet-intro.mdx';
 
 Follow these steps to install and run Mintlify on your <Tooltip tip="Add tooltip text" headline="saas" cta="sanoke text">operating</Tooltip> system:
 
+```mermaid placement="top-right"
+  flowchart LR
+    subgraph subgraph1
+        direction TB
+        top1[top] --> bottom1[bottom]
+    end
+    subgraph subgraph2
+        direction TB
+        top2[top] --> bottom2[bottom]
+    end
+    %% ^ These subgraphs are identical, except for the links to them:
+
+    %% Link *to* subgraph1: subgraph1 direction is maintained
+    outside --> subgraph1
+    %% Link *within* subgraph2:
+    %% subgraph2 inherits the direction of the top-level graph (LR)
+    outside ---> top2
+```
+
 <Badge shape="pill">Label/</Badge>
+
+```mermaid
+```
+
+/m
 
 # Hey
 
@@ -21,6 +45,8 @@ Follow these steps to install and run Mintlify on your <Tooltip tip="Add tooltip
 ## hey
 
 #### Hey
+
+/
 
 |  |  |  |  |
 | --- | --- | --- | --- |
@@ -58,7 +84,9 @@ yarn global add mintlify
 mintlify dev
 ```
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+A local preview of your documentation will be available at `http://localhost:3000`.<Badge>H</Badge>
+
+> <Icon icon="car-tunnel" color="#5a3636" />
 
 ### Custom Ports
 
@@ -100,9 +128,9 @@ mintlify broken-links
 
 ## Deployment
 
-<Tip>
+<Check>
   Unlimited editors available under the [Pro Plan](https://mintlify.com/pricing) and above.
-</Tip>
+</Check>
 
 If the deployment is successful, you should see the following:
 
@@ -110,6 +138,7 @@ If the deployment is successful, you should see the following:
   <img
     src="/images/checks-passed.png"
     style={{ borderRadius: '0.5rem' }}
+    className="mx-auto"
   />
 </Frame>
 
@@ -138,3 +167,5 @@ Curious about what changed in the CLI version? [Check out the CLI changelog.](ht
 ### This is h3
 
 #### This is cool
+
+$E = mc^2$ ba
